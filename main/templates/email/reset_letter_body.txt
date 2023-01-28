@@ -1,0 +1,10 @@
+Dear user {{ user.username }}!
+
+You have requested a password reset on the "Bulletin Board" site.
+To reset, please follow the link
+
+{{ protocol }}://{{ domain }}{% url 'main:password_reset_confirm' uidb64=uid token=token %}
+
+Goodbye!
+
+Sincerely, site administration "Bulletin board".

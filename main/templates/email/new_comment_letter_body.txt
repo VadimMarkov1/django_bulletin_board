@@ -1,0 +1,10 @@
+Dear user {{ user.username }}!
+
+A new comment has been left on one of your ads.
+To read it, please follow the link
+
+{{ host }}{% url 'main:profile_bb_detail' pk=comment.bb.pk %}
+
+Goodbye!
+
+Sincerely, site administration "Bulletin board".

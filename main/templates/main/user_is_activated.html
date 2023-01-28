@@ -1,0 +1,9 @@
+{% extends "layout/basic.html" %}
+
+{% block title %}User already activated{% endblock %}
+
+{% block content %}
+<h2>Activation</h2>
+<p>User with this name has been activated before.</p>
+<p><a href="{% url 'main:login' %}">Login</a></p>
+{% endblock %}
